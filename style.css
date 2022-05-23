@@ -1,0 +1,164 @@
+/* General Styles */
+body,
+body::before,
+body::after {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/******Form Design****/
+
+.main-body-bg{
+  background-color: #122136;
+  padding: 50px 0;
+}
+.inner-content-wrap .header-txt{
+  padding: 20px 0;
+}
+.inner-content-wrap .header-txt h4{
+  color:#F15524;
+  font-size: 22px;
+  font-weight: 600 !important;
+}
+.inner-content-wrap .header-txt h6{
+  color:#fff;  
+}
+.inner-content-wrap .card{
+  background-color: #293E5A;
+  border-radius: 18px;
+}
+.inner-content-wrap .card .card-header{
+  background-color: transparent !important;
+  border-bottom: unset;
+  height: 75px;
+  position: relative;
+}
+.avatar{
+  height: 120px;
+  width:120px;
+  border: 2px solid #F0532D;
+  border-radius: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.avatar img{
+  width: 100%;
+  object-fit: cover;
+}
+.upload-icon{
+  height: 27px;
+  width: 27px;
+  border-radius: 100%;
+  background-color: #F0532D;
+  text-align: center;
+  line-height: 27px;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  bottom: 4%;
+}
+
+.upload-icon i{
+  color: #fff;
+}
+.card-input-gp .form-group{
+  margin-top: 15px;
+}
+.card-input-gp label{
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+.card-input-gp label .important{
+  color:#F0532D;
+}
+
+.card-input-gp .std-border{
+  background-color: transparent;
+  border: 1.5px solid #768493;
+  border-radius: 10px;
+  color:#fff;
+  font-size: 16px;
+}
+.card-input-gp .std-border:focus{
+  box-shadow: unset;
+}
+.card-input-gp .std-border::placeholder{
+  color:#fff;
+}
+
+.card-input-gp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-input-gp > .fields{
+  flex-basis: 49.5%;
+}
+.card-input-gp textarea,
+.card-input-gp .list-sport{
+  height: 75px;
+}
+.card-input-gp select option{
+  background-color: #000;
+  color:#fff !important;
+}
+.card-input-gp select {
+  appearance: none;
+
+}
+.pre-sport{
+  color:#F15524 !important;
+}
+.card-input-gp .select-wrap,
+.card-input-gp .select-wrap select,
+.card-input-gp .date-wrap{
+  position: relative;
+  z-index: 4;
+}
+.card-input-gp .select-wrap::after{
+  content: "";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/down-arrow.png");
+    height: 10px;
+    width: 14px;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  .card-input-gp .date-wrap> input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.field-full-col{
+  flex-basis: 100%;
+}
+.save-btn{
+  background: #F15524;
+  border-radius: 10px;
+  color:#fff;
+  padding: 5px 35px;
+}
+.save-btn:hover{
+  background-color: transparent;
+  border:1px solid #F15524;
+  color:#F15524;
+}
+
+@media (max-width:767px){
+  .card-input-gp > .fields{
+    flex-basis: 100%;
+  }
+  .content-area{
+    margin-top: 25px;
+  }
+}
